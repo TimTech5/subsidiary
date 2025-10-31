@@ -130,9 +130,9 @@ const sr = ScrollReveal({
   reset: true
 })
 
-sr.reveal(`.hero-content, .hero-cta, .btn, .footer_container`)
-sr.reveal(`.home_description, footer_info`, {delay:500})
-sr.reveal(`.home_search`, {delay:600})
+sr.reveal(`.hero-content, .hero-cta, .btn, .footer_container, .about-page, .page-hero`)
+sr.reveal(`.home_description, .footer_info.contact-hero, .difference-section, .services-page, .section, .faq-section`, {delay:500})
+sr.reveal(`.home_search, .services-grid, .contact-grid`, {delay:600})
 sr.reveal(`.home_value`, {delay:700})
 sr.reveal(`.home_images`, {delay:800, origin:'bottom'})
 sr.reveal(`.logo_images`, {interval:100})

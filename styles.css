@@ -153,7 +153,7 @@ body {
 
 .nav-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   
@@ -202,7 +202,7 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-  background: url('./assets/images/DJI_0487-scaled.jpg') center/cover no-repeat;
+  background:url("photo111.jpg")center/cover no-repeat;
   color: #fff;
   text-align: center;
   height: 80vh;
@@ -744,6 +744,9 @@ h1 {
   bottom: 8rem;
 }
 
+.bx{
+  color:#a41f1f;
+}
 
 
 
@@ -1159,6 +1162,45 @@ h1 {
   }
 }
 
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav{
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  nav.show {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    
+    align-items: center;
+    
+  }
+
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .about .container {
+    flex-direction: column;
+  }
+
+} 
+
  
 /* Small phones (optional) — target very small narrow screens */
 @media (max-width: 320px) {  /* 320px and up */ 
@@ -1331,6 +1373,10 @@ padding-right:0;
   opacity: 0.9;
 }
 
+.reveal{
+  display: none;
+}
+
 }
 
 
@@ -1398,69 +1444,183 @@ nav a:hover {
 
 
 
-/* Hero Section */
-.hero {
-  background: url('./assets/images/DJI_0487-scaled.jpg') center/cover no-repeat;
-  color: #fff;
-  text-align: center;
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-.hero h1, p{
-  color:#fff;
 
-}
 
-.hero::after {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.7);
-}
 
-.hero-content {
-  position: relative;
-  z-index: 2;
+/* Small phones (optional) — target very small narrow screens */
+@media (max-width: 600px) {  /* 480px and up */ 
+ 
+ .hamburger{
+  display:block
+}
+#nav-menu a{display:flex; 
+  flex-direction:row}
+
+ .brand .logo{
+  width:8rem;
+  object-fit:contain;
+ 
 }
 
 .hero-content h1{
-  font-size: 3.2rem;
+  font-size: 2.4rem;
 }
+
 
 .hero-content h2{
-  font-size: 2rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
 
+.hero-content p{
+  font-size: 1rem;
+  font-weight: 200;
 }
 
 
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
-}
+.about-text h2{
 
-.hero-cta .btn {
-  background:#a41f1f;
-  color: #fff;
-  padding: 0.8rem 1.5rem;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: 0.3s;
-  
-}
+  padding: 0.2rem;
 
-.hero-cta .btn:hover {
-  background:#fff;
+}
+.about-text p{
+  text-align: left;
+  padding: 0.2rem;
+}
+.content .highlight {
   color:#a41f1f;
   font-weight: 600;
+  margin-bottom: 1rem;
 }
 
+h1 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color:#0b0b0b;
+  margin-bottom: 1rem;
+  
+}
+.description{
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  color: #333;
+  text-align: left;
+  font-size: 0.85rem;
+}
+.accordion-content p{
+  font-size: 0.8rem;
+  text-align: left;
+}
+.accordion-header span{
+  margin-left: 1rem;
+}
+  #choose{
+    font-size: 1.2rem;
+    text-align: center;
+    
+    
+  }
+  #chose{
+    font-size: 1.2rem;
+    text-align: center;
+    
+  }
+  .lead{
+    font-size: 0.85rem;
+    text-align: left;
+    padding: 3rem;
+    
+    line-height: 1.4;
+    
+  }
+  .grid{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    
+  }
+  div{
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+  }
+.faq-left h1{
+  font-size: 1.25rem;
+    text-align: center;
+   
+}
+.faq-left p{
+  font-size: 0.85rem;
+    text-align: left;
+    padding:0.1rem; 
+}
+.faq-header{
+  font-size: 0.9rem;
+  padding: 2rem;
+}
+.faq-header span{
+margin-left: 1rem;
+}
+.faq-content{
+ font-size: 0.85rem;
+    text-align: left;
+    padding: 0;
+    line-height: 1.4;
+}
+.faq-right{
+   padding: 0rem;
+}
+.faq-item{
+  padding: 0;
+}
+.footer-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: -3rem;
+padding-right: -3rem;
 
+}
 
-.hero-content .kicker{
-  font-size: 1.5rem;
-} 
+.footer-column ul li{
+  display: block;
+align-items: center;
+}
+
+.footer-column p{
+text-align: left;
+font-size: 0.8rem;
+opacity:0.6;
+  padding-left: 0;
+padding-right: 0;
+
+}
+.footer-column .contact{
+font-size: 0.9rem;
+line-height: 1.4;
+padding-left:0;
+padding-right:0;
+}
+
+.newsletter{
+  margin-left: -4rem;
+  opacity: 0.8;
+}
+
+.footer-container .newsletter p{
+  display: block;
+  opacity: 0.8;
+  font-size: 0.2rem;
+}
+.newsletter button{
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.reveal{
+  display: none;
+}
+
+}
 }
