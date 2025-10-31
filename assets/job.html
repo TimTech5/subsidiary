@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Careers — Primegate Distilleries</title>
+  <meta name="description" content="Join Primegate Distilleries — discover open roles in production, QA, logistics and more. Apply online." />
+<link rel="stylesheet" href="job.css">
+</head>
+<body>
+  <div class="wrap">
+     <div class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+      <img src="/assets/images/primegate-lnnnn.png" alt="Primegate logo" class="logo"> 
+    </a>
+
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/contact.html" class="active">Contact</a></li>
+          <li><a href="/index.html">Job Opportunities</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger3" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+</div>
+<br>
+<br>
+
+    <header>
+      <div class="brand">
+        <div class="j-logo">PG</div>
+        <div>
+          <h1>Primegate Distilleries</h1>
+          <p>Careers & Job Opportunities — Ethanol Manufacturing</p>
+        </div>
+      </div>
+      <div class="contact">
+        <div style="text-align:right">
+          <div style="font-weight:600">Km 14, Idiroko Road, Iju, Ota</div>
+          <div style="color:var(--muted)">info@primegatedistilleries.com • +234 802 312 9361</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero" aria-labelledby="careers-title">
+      <div class="hero-card">
+        <h2 id="careers-title">Join Our Team</h2>
+        <p>We're growing. If you want to work at a modern ethanol production facility that values safety, quality and sustainability, explore our open roles and apply online.</p>
+
+        <div class="stats">
+          <div class="stat"><strong>8</strong><div style="font-size:12px;color:var(--muted)">Open positions</div></div>
+          <div class="stat"><strong>3</strong><div style="font-size:12px;color:var(--muted)">Departments</div></div>
+          <div class="stat"><strong>Ongoing</strong><div style="font-size:12px;color:var(--muted)">Hiring</div></div>
+        </div>
+
+        <hr style="margin:18px 0;border:none;border-top:1px dashed #eef1ef" />
+
+        <div>
+          <div class="filters" role="tablist" aria-label="Filter jobs">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="production">Production</button>
+            <button class="filter-btn" data-filter="quality">Quality</button>
+            <button class="filter-btn" data-filter="logistics">Logistics</button>
+            <button class="filter-btn" data-filter="office">Office</button>
+          </div>
+
+          <div class="jobs" id="jobs-list">
+            <!-- Job items inserted here -->
+            <article class="job" data-dept="production">
+              <h3>Plant Operator — Production</h3>
+              <div class="meta">Km 14, Idiroko Road • Full-time • Rotating shifts</div>
+              <p>Operate distillation systems, monitor process variables, and collaborate with maintenance to ensure continuous, safe production.</p>
+              <div class="apply">
+                <button class="ghost" onclick="openDetails(event,this)">View</button>
+                <button class="btn" onclick="openApply('Plant Operator — Production')">Apply</button>
+              </div>
+            </article>
+
+            <article class="job" data-dept="quality">
+              <h3>Quality Assurance Officer</h3>
+              <div class="meta">Km 14, Idiroko Road • Full-time</div>
+              <p>Lead QA testing, maintain records, and ensure product purity to meet pharmaceutical and industrial standards.</p>
+              <div class="apply">
+                <button class="ghost" onclick="openDetails(event,this)">View</button>
+                <button class="btn" onclick="openApply('Quality Assurance Officer')">Apply</button>
+              </div>
+            </article>
+
+            <article class="job" data-dept="logistics">
+              <h3>Logistics & Supply Chain Coordinator</h3>
+              <div class="meta">Ota, Ogun State • Full-time</div>
+              <p>Coordinate tanker deliveries, manage inventory and shipping documentation, and liaise with transport partners across Nigeria.</p>
+              <div class="apply">
+                <button class="ghost" onclick="openDetails(event,this)">View</button>
+                <button class="btn" onclick="openApply('Logistics & Supply Chain Coordinator')">Apply</button>
+              </div>
+            </article>
+
+            <article class="job" data-dept="office">
+              <h3>HR & Admin Officer</h3>
+              <div class="meta">Ota, Ogun State • Full-time</div>
+              <p>Support recruitment, employee relations and administration tasks to maintain a productive workplace.</p>
+              <div class="apply">
+                <button class="ghost" onclick="openDetails(event,this)">View</button>
+                <button class="btn" onclick="openApply('HR & Admin Officer')">Apply</button>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="side-card">
+          <h3 style="margin:0">Apply Now</h3>
+          <p class="note">Prepare a single PDF (CV + Cover Letter + Certificates). Maximum 3MB.</p>
+
+          <div class="upload">
+            <label style="font-size:13px;display:block;margin-bottom:8px">Preferred application method</label>
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+              <a href="mailto:careers@primegatedistilleries.com?subject=Application" class="filter-btn" style="text-decoration:none">Email: info@primegatedistilleries.com</a>
+              <button class="filter-btn" onclick="openApply()">Apply Online</button>
+            </div>
+
+            <div class="note">Applications close: <strong id="closing-date">—</strong></div>
+
+            <hr style="margin:12px 0;border:none;border-top:1px dashed #eef1ef" />
+
+            <div style="font-size:14px;font-weight:600">Benefits</div>
+            <ul style="margin:8px 0 0 18px;color:var(--muted)">
+              <li>Competitive pay</li>
+              <li>Training & development</li>
+              <li>Health & safety programmes</li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px">
+        <div>© 2025 Primegate Distilleries Limited</div>
+        <div>Km 14, Idiroko Road, Iju, Ota • info@primegatedistilleries.com • +234 802 312 9361</div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Modal backdrop -->
+  <div class="modal-backdrop" id="modal" role="dialog" aria-hidden="true">
+    <div class="modal" role="document">
+      <button aria-label="close" style="float:right;background:transparent;border:none;font-size:18px;cursor:pointer" onclick="closeModal()">✕</button>
+      <h4 id="modal-title">Apply</h4>
+      <p class="note">Fill the form below and attach your CV (PDF only, max 3MB).</p>
+
+      <form id="apply-form" onsubmit="submitForm(event)" enctype="multipart/form-data">
+        <div class="form-row" style="margin-top:12px">
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+        </div>
+
+        <div style="margin-top:10px">
+          <label for="position">Position applying for</label>
+          <input id="position" name="position" type="text" required />
+        </div>
+
+        <div style="margin-top:10px">
+          <label for="message">Short message (optional)</label>
+          <textarea id="message" name="message" placeholder="Tell us why you'd be a great fit..."></textarea>
+        </div>
+
+        <div style="margin-top:10px">
+          <label for="cv">Attach CV (PDF only, max 3MB)</label>
+          <input id="cv" name="cv" type="file" accept="application/pdf" required />
+        </div>
+
+        <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:14px">
+          <button type="button" class="ghost" onclick="closeModal()">Cancel</button>
+          <button class="btn" type="submit">Submit Application</button>
+        </div>
+      </form>
+
+      <div id="form-success" style="display:none;margin-top:12px;color:green">Thanks — your application has been prepared. We'll contact shortlisted applicants.</div>
+    </div>
+  </div>
+
+  <script defer src="job.js">
+   
+  </script>
+</body>
+</html>
