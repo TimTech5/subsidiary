@@ -96,7 +96,6 @@ body {
   
 } 
 
-
 .fa-solid{
   color:#ffffff;
 }
@@ -105,7 +104,6 @@ body {
   color:#a41f1f;
   margin-right:16px;
 }
-
 
 
 #qoute-btn{
@@ -153,7 +151,7 @@ body {
 
 .nav-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 1rem 2rem;
   
@@ -202,7 +200,7 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-  background:url("photo111.jpg")center/cover no-repeat;
+  background: url('./assets/images/DJI_0487-scaled.jpg') center/cover no-repeat;
   color: #fff;
   text-align: center;
   height: 80vh;
@@ -221,7 +219,7 @@ nav a:hover {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-   background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.5);
 }
 
 .hero-content {
@@ -233,15 +231,8 @@ nav a:hover {
   font-size: 3.6rem;
 }
 
-#prime{
-  font-size: 3.6rem;
-  color:#a41f1f;
-  
-}
-
 .hero-content h2{
-  font-size: 1.2rem;
-  font-weight: 300;
+  font-size: 2rem;
 
 }
 
@@ -326,9 +317,6 @@ font-weight: 500;
 }
 .about-image {
   flex: 1;
-}
-.about-grid p{
-  color:#111;
 }
 
 .about h2 {
@@ -751,9 +739,6 @@ h1 {
   bottom: 8rem;
 }
 
-.bx{
-  color:#a41f1f;
-}
 
 
 
@@ -1169,465 +1154,4 @@ h1 {
   }
 }
 
-
-/* Responsive */
-@media (max-width: 768px) {
-  nav{
-    display: none;
-    flex-direction: column;
-    background: #fff;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 200px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  }
-
-  nav.show {
-    display: flex;
-    flex-direction: column;
-    padding-left: 0.2rem;
-    padding-right: 0.2rem;
-    
-    align-items: center;
-    
-  }
-
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .about .container {
-    flex-direction: column;
-  }
-
-} 
-
  
-/* Small phones (optional) — target very small narrow screens */
-@media (max-width: 320px) {  /* 320px and up */ 
- 
- .hamburger{
-  display:block
-}
-#nav-menu a{display:flex; 
-  flex-direction:row}
-
- .brand .logo{
-  width:8rem;
-  object-fit:contain;
- 
-}
-
-.hero-content h1{
-  font-size: 2.4rem;
-}
-
-
-.hero-content h2{
-  font-size: 1rem;
-  font-weight: 300;
-}
-
-.hero-content p{
-  font-size: 1rem;
-  font-weight: 200;
-}
-
-
-.about-text h2{
-
-  padding: 0.2rem;
-
-}
-.about-text p{
-  text-align: left;
-  padding: 0.2rem;
-}
-.content .highlight {
-  color:#a41f1f;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-h1 {
-  font-size: 1.4rem;
-  font-weight: 800;
-  color:#0b0b0b;
-  margin-bottom: 1rem;
-  
-}
-.description{
-  line-height: 1.7;
-  margin-bottom: 2rem;
-  color: #333;
-  text-align: left;
-  font-size: 0.85rem;
-}
-.accordion-content p{
-  font-size: 0.8rem;
-  text-align: left;
-}
-.accordion-header span{
-  margin-left: 1rem;
-}
-  #choose{
-    font-size: 1.2rem;
-    text-align: center;
-    
-    
-  }
-  #chose{
-    font-size: 1.2rem;
-    text-align: center;
-    
-  }
-  .lead{
-    font-size: 0.85rem;
-    text-align: left;
-    padding: 3rem;
-    
-    line-height: 1.4;
-    
-  }
-  .grid{
-    display: flex;
-    flex-direction: column;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    
-  }
-  div{
-    padding-left: 1.8rem;
-    padding-right: 1.8rem;
-  }
-.faq-left h1{
-  font-size: 1.25rem;
-    text-align: center;
-   
-}
-.faq-left p{
-  font-size: 0.85rem;
-    text-align: left;
-    padding:0.1rem; 
-}
-.faq-header{
-  font-size: 0.9rem;
-  padding: 2rem;
-}
-.faq-header span{
-margin-left: 1rem;
-}
-.faq-content{
- font-size: 0.85rem;
-    text-align: left;
-    padding: 0;
-    line-height: 1.4;
-}
-.faq-right{
-   padding: 0rem;
-}
-.faq-item{
-  padding: 0;
-}
-.footer-container{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-left: -3rem;
-padding-right: -3rem;
-
-}
-
-.footer-column ul li{
-  display: block;
-align-items: center;
-}
-
-.footer-column p{
-text-align: left;
-font-size: 0.8rem;
-opacity:0.6;
-  padding-left: 0;
-padding-right: 0;
-
-}
-.footer-column .contact{
-font-size: 0.9rem;
-line-height: 1.4;
-padding-left:0;
-padding-right:0;
-}
-
-.newsletter{
-  margin-left: -4rem;
-  opacity: 0.8;
-}
-
-.footer-container .newsletter p{
-  display: block;
-  opacity: 0.8;
-  font-size: 0.2rem;
-}
-.newsletter button{
-  font-size: 0.8rem;
-  font-weight: 600;
-  opacity: 0.9;
-}
-
-.reveal{
-  display: none;
-}
-
-}
-
-
-
-/* Tablets / landscape phones */
-@media (min-width: 768px) {  /* iPad portrait */
-.brand .logo{
-  width:12rem;
-  object-fit:contain;
- 
-}
-
-/* Navbar */
-.navbar {
-  background:transparent;
-  position:sticky;
-  top:0;
-  z-index:40;
-  backdrop-filter: blur(6px);
-  border-bottom:1px solid rgba(0,0,0,0.04);
-}
-
-.nav-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1rem 2rem;
-  
-}
-
-
-
-nav {
-  display: flex;
-  gap: 1.5rem;
-
-}
-
-
-#nav-menu{
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 0;
-  z-index: 2000;
-  padding:20px 120px 20px 120px;
-  gap:2.5rem;
-  border-radius: 2px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  position: relative;
-  font-size: 1.1rem;
-  
-  
-}
-
-nav a.active,
-nav a:hover {
-  color: #a41f1f;
-}
-
-
-
-
-
-
-/* Small phones (optional) — target very small narrow screens */
-@media (max-width: 600px) {  /* 480px and up */ 
- 
- .hamburger{
-  display:block
-}
-#nav-menu a{display:flex; 
-  flex-direction:row}
-
- .brand .logo{
-  width:8rem;
-  object-fit:contain;
- 
-}
-
-.hero-content h1{
-  font-size: 2.4rem;
-}
-
-
-.hero-content h2{
-  font-size: 1rem;
-  font-weight: 300;
-}
-
-.hero-content p{
-  font-size: 1rem;
-  font-weight: 200;
-}
-
-
-.about-text h2{
-
-  padding: 0.2rem;
-
-}
-.about-text p{
-  text-align: left;
-  padding: 0.2rem;
-}
-.content .highlight {
-  color:#a41f1f;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-h1 {
-  font-size: 1.4rem;
-  font-weight: 800;
-  color:#0b0b0b;
-  margin-bottom: 1rem;
-  
-}
-.description{
-  line-height: 1.7;
-  margin-bottom: 2rem;
-  color: #333;
-  text-align: left;
-  font-size: 0.85rem;
-}
-.accordion-content p{
-  font-size: 0.8rem;
-  text-align: left;
-}
-.accordion-header span{
-  margin-left: 1rem;
-}
-  #choose{
-    font-size: 1.2rem;
-    text-align: center;
-    
-    
-  }
-  #chose{
-    font-size: 1.2rem;
-    text-align: center;
-    
-  }
-  .lead{
-    font-size: 0.85rem;
-    text-align: left;
-    padding: 3rem;
-    
-    line-height: 1.4;
-    
-  }
-  .grid{
-    display: flex;
-    flex-direction: column;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    
-  }
-  div{
-    padding-left: 1.8rem;
-    padding-right: 1.8rem;
-  }
-.faq-left h1{
-  font-size: 1.25rem;
-    text-align: center;
-   
-}
-.faq-left p{
-  font-size: 0.85rem;
-    text-align: left;
-    padding:0.1rem; 
-}
-.faq-header{
-  font-size: 0.9rem;
-  padding: 2rem;
-}
-.faq-header span{
-margin-left: 1rem;
-}
-.faq-content{
- font-size: 0.85rem;
-    text-align: left;
-    padding: 0;
-    line-height: 1.4;
-}
-.faq-right{
-   padding: 0rem;
-}
-.faq-item{
-  padding: 0;
-}
-.footer-container{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-left: -3rem;
-padding-right: -3rem;
-
-}
-
-.footer-column ul li{
-  display: block;
-align-items: center;
-}
-
-.footer-column p{
-text-align: left;
-font-size: 0.8rem;
-opacity:0.6;
-  padding-left: 0;
-padding-right: 0;
-
-}
-.footer-column .contact{
-font-size: 0.9rem;
-line-height: 1.4;
-padding-left:0;
-padding-right:0;
-}
-
-.newsletter{
-  margin-left: -4rem;
-  opacity: 0.8;
-}
-
-.footer-container .newsletter p{
-  display: block;
-  opacity: 0.8;
-  font-size: 0.2rem;
-}
-.newsletter button{
-  font-size: 0.8rem;
-  font-weight: 600;
-  opacity: 0.9;
-}
-
-.reveal{
-  display: none;
-}
-
-}
-}
