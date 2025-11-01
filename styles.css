@@ -336,6 +336,7 @@ font-weight: 500;
   line-height: 1.6;
   margin-bottom: 1rem;
   color:#111;
+ 
 }
 
 .about-text h2{
@@ -899,6 +900,7 @@ h1 {
 .about-grid p {
   line-height: 1.6;
   margin-bottom: 1rem;
+  
 }
 
 .values {
@@ -1151,6 +1153,9 @@ h1 {
   .footer-container {
     flex-direction: column;
     text-align: center;
+  }
+  .about-text p{
+    text-align: left;
   }
 }
 
@@ -1489,6 +1494,7 @@ nav a:hover {
 .about-text p{
   text-align: left;
   padding: 0.2rem;
+  
 }
 .content .highlight {
   color:#a41f1f;
